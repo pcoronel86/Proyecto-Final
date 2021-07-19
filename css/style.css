@@ -1,0 +1,318 @@
+.sectionMedicos {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  /* display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+    width: 80%;
+    padding: 15px;
+    flex-wrap: wrap;
+    align-content: center;
+    */ }
+
+.medicos {
+  color: #008080;
+  height: 400px;
+  background-color: #9fe1f5;
+  opacity: 0.5;
+  border: #ccc solid 1px; }
+
+.medicos:hover {
+  opacity: 1;
+  transform: scale(1.02);
+  transition: 1s;
+  box-shadow: 10px 5px 5px black; }
+
+.medicos__foto--ajuste {
+  width: 250px;
+  height: 300px;
+  background-position: center; }
+
+@media only screen and (max-width: 768px) {
+  .sectionMedicos {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto; } }
+
+@media only screen and (max-width: 375px) {
+  .sectionMedicos {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto; } }
+
+.h3 {
+  color: #008080; }
+
+.sectionTratamientos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: stretch; }
+
+.article {
+  width: 45%;
+  margin-bottom: 30px;
+  padding-left: 15px;
+  margin: 15px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #9fe1f5;
+  color: green;
+  border-radius: 10px;
+  border: 2px inset black; }
+
+.condicional {
+  background-color: #008000;
+  color: white; }
+
+.article:hover {
+  transition: 1s;
+  transform: scale(1.1);
+  box-shadow: 10px 5px 5px black; }
+
+.article__titulo {
+  line-height: 2em;
+  font-weight: bold;
+  color: #008080; }
+
+.equipamiento {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  width: 90%;
+  /* padding: 15px; */
+  flex-wrap: nowrap;
+  align-items: stretch;
+  align-content: center; }
+
+.equipo {
+  display: flex;
+  margin-bottom: 20px;
+  background-color: #9fe1f5;
+  border-radius: 5px;
+  border: 2px inset black;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: nowrap; }
+
+.equipo__foto {
+  display: flex;
+  width: auto;
+  flex-direction: row;
+  align-content: stretch; }
+
+.equipo__texto {
+  color: #000000;
+  margin: 15px 0px 0px 15px;
+  padding-bottom: 10px;
+  width: auto; }
+
+@media screen and (max-width: 768px) {
+  .equipo {
+    flex-wrap: wrap; } }
+
+input[type=text], [type=tel], [type=email] {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  box-sizing: border-box; }
+
+input[type=reset], [type=submit] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer; }
+
+select {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  background-color: #ffffff; }
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none; }
+
+.formulario {
+  background-color: #55a3bb;
+  padding: 20px;
+  margin: 0px 0px 10px 10px;
+  width: 700px;
+  border: 2px solid #000000; }
+
+.fondoConsulta {
+  background-image: url(../images/fondoContacto2.jpg);
+  background-position: center;
+  background-size: cover; }
+
+@media screen and (max-width: 768px) {
+  .formulario {
+    width: 75%; } }
+
+.footer {
+  background: #07073d;
+  background: linear-gradient(90deg, #07073d 11%, rgba(0, 212, 255, 0.753922) 51%, rgba(0, 212, 255, 0.75) 60%, #020024 98%);
+  color: white;
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  padding: 10px; }
+  .footer .footer__direccion {
+    justify-self: start;
+    margin-bottom: 0rem; }
+  .footer .footer__logo {
+    justify-self: center;
+    align-self: center; }
+  .footer .footer__redes {
+    justify-self: end;
+    align-self: end; }
+
+@media only screen and (max-width: 400px) {
+  .footer {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto; }
+    .footer .footer__logo {
+      max-width: 100%;
+      justify-self: start; }
+    .footer .footer__redes {
+      justify-self: start; } }
+
+.footer__iredes {
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  display: inline-block; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+h1 {
+  color: #ffffff;
+  display: block;
+  position: absolute; }
+
+.ocultar {
+  opacity: 0; }
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  font-size: 2em;
+  letter-spacing: 3px; }
+
+h3 {
+  margin-left: 20px;
+  font-weight: 100;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: black; }
+
+h4 {
+  font-family: 'Raleway', sans-serif;
+  color: #000000;
+  font-size: 1.4em; }
+
+h5 {
+  font-size: 1.3em; }
+
+.logo {
+  width: 100%;
+  margin: 10px;
+  text-align: center; }
+
+.menu {
+  width: 100%;
+  background-color: #091216;
+  text-align: center;
+  display: block;
+  border-bottom: 2px solid #0081b8; }
+  .menu ul {
+    list-style: none;
+    display: block;
+    margin-bottom: 0rem; }
+    .menu ul :hover {
+      background-color: #2d3636; }
+    .menu ul li {
+      display: inline-block; }
+      .menu ul li a {
+        font-weight: normal;
+        text-decoration: none;
+        font-size: larger;
+        display: block;
+        font-size: 20px;
+        padding: 10px 15px 10px 15px;
+        color: #1a60f8; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300; }
+
+.carousel-item {
+  height: 600px; }
+
+.carousel-img {
+  background-position: center;
+  background-size: cover; }
+
+.sectionIndexUno, .sectionIndexTres {
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  line-height: 2.5em;
+  font-size: 20px;
+  color: #008080; }
+
+.sectionIndexDos, .sectionIndexCuatro {
+  margin: auto;
+  background-image: url(../images/_imagen_fondo_1.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  color: #ffffff;
+  line-height: 2.5em;
+  padding: 100px 0px 100px 0px; }
+
+.sectionIndexCuatro {
+  background-image: url(../images/_imagen_fondo_2.jpg); }
+
+@media only screen and (max-width: 768px) {
+  .sectionIndexUno, .sectionIndexTres, .sectionIndexDos, .sectionIndexCuatro {
+    font-size: 15px; } }
+
+@media only screen and (max-width: 400px) {
+  .logo__clinica {
+    max-width: 100%; } }
+
+.sectionTitulo {
+  height: 10%;
+  padding: 50px;
+  text-align: center;
+  color: #008080;
+  width: 100%; }
+
+/* Footer*/

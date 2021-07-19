@@ -1,0 +1,60 @@
+$colortitulos:#008080;
+$test: #008000;
+$fondo:#9fe1f5;
+@mixin condicion($color){
+    background-color:($color);
+
+    @if $color == $fondo{
+        color:green
+    }
+         @else if $color == $test{
+                color:white
+    }
+            @else{
+                color:black
+         }
+
+}
+.h3{
+    color: $colortitulos;
+}
+
+.sectionTratamientos{
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: stretch;
+}
+.article{
+    width: 45%;
+    margin-bottom: 30px;
+    padding-left: 15px;
+    margin: 15px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align:left;
+    @include condicion($fondo);
+    border-radius: 10px;
+    border: 2px inset black;
+       
+}
+.condicional{
+    @include condicion($test);
+}
+.article:hover{
+    transition: 1s;
+    transform: scale(1.1);
+    box-shadow: 10px 5px 5px black;
+}
+
+
+.article__titulo{
+    line-height: 2em;
+    font-weight:bold;
+    color: $colortitulos;
+}

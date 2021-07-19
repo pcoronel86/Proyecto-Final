@@ -1,0 +1,142 @@
+@import "medicos";
+@import "tratamientos";
+@import "equipamiento";
+@import "contacto";
+@import "footer";
+$ancho: 100px;
+$menub: #091216;
+$colortitulos:#008080;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    color: #ffffff;
+    display: block;
+    position: absolute;
+}
+.ocultar{
+    opacity: 0;
+}
+h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    font-size: 2em;
+    letter-spacing: 3px;
+}
+h3{
+    margin-left: $ancho/5;
+    font-weight: 100;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+}
+h4{
+    font-family: 'Raleway', sans-serif;
+    color: #000000;  
+    font-size: 1.4em;
+}
+h5{
+    font-size: 1.3em;  
+}
+.logo{
+    width: 100%;
+    margin: $ancho/10;
+    text-align: center;
+}
+.menu{
+    width: 100%;
+    background-color: $menub;
+    text-align: center;
+    display: block; 
+    border-bottom: 2px solid #0081b8;
+    ul{
+        list-style: none;
+        display: block;
+        margin-bottom: 0rem;
+        :hover{
+            background-color: #2d3636;
+        }
+        
+        li{
+            display: inline-block;
+            a{
+                font-weight: normal;
+                text-decoration: none;
+                font-size: larger;
+                display: block;
+                font-size: $ancho/5;
+                padding: 10px 15px 10px 15px;
+                color: #1a60f8;
+                
+            }
+        }
+    }
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight:300;
+}
+
+.carousel-item{
+    height: $ancho*6;
+    
+}
+.carousel-img{
+    background-position: center;
+    background-size: cover;
+    
+    
+}
+.sectionIndexUno, .sectionIndexTres{
+    margin: auto;
+    padding: $ancho/5;
+    text-align: center;
+    line-height: 2.5em;
+    font-size: $ancho/5;
+    color: $colortitulos;
+}
+.sectionIndexDos, .sectionIndexCuatro{
+    margin: auto;
+    background-image: url(../images/_imagen_fondo_1.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    color: #ffffff;
+    line-height: 2.5em;
+    padding: 100px 0px 100px 0px;
+}
+.sectionIndexCuatro{
+    background-image: url(../images/_imagen_fondo_2.jpg);
+}
+@media only screen and (max-width: 768px) {
+    .sectionIndexUno, .sectionIndexTres, .sectionIndexDos, .sectionIndexCuatro {
+        font-size: 15px;
+    }       
+}
+@media only screen and (max-width: 400px) {
+    .logo__clinica{
+        max-width: 100%;
+    }
+           
+}
+
+
+.sectionTitulo{
+    height: 10%;
+    padding: $ancho/2;
+    text-align: center;
+    color: $colortitulos;
+    width: 100%;
+    
+}
+
+
+/* Footer*/
+
+
+
