@@ -1,22 +1,25 @@
 $colortitulos:#008080;
-$test: #008000;
+$test: #270404;
 $fondo:#9fe1f5;
 @mixin condicion($color){
     background-color:($color);
 
     @if $color == $fondo{
-        color:green
+        color:#000000
     }
          @else if $color == $test{
                 color:white
     }
             @else{
-                color:black
+                color:#a12323
          }
 
 }
 .h3{
     color: $colortitulos;
+}
+.Btratamiento{
+    background-color: #faf3f3;
 }
 
 .sectionTratamientos{
@@ -43,13 +46,13 @@ $fondo:#9fe1f5;
     border: 2px inset black;
        
 }
-.condicional{
-    @include condicion($test);
-}
+
 .article:hover{
     transition: 1s;
     transform: scale(1.1);
     box-shadow: 10px 5px 5px black;
+    @include condicion($test);
+    
 }
 
 

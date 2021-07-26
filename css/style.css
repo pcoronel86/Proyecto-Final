@@ -49,6 +49,9 @@
 .h3 {
   color: #008080; }
 
+.Btratamiento {
+  background-color: #faf3f3; }
+
 .sectionTratamientos {
   display: flex;
   flex-wrap: wrap;
@@ -68,18 +71,16 @@
   color: #212529;
   text-align: left;
   background-color: #9fe1f5;
-  color: green;
+  color: #000000;
   border-radius: 10px;
   border: 2px inset black; }
-
-.condicional {
-  background-color: #008000;
-  color: white; }
 
 .article:hover {
   transition: 1s;
   transform: scale(1.1);
-  box-shadow: 10px 5px 5px black; }
+  box-shadow: 10px 5px 5px black;
+  background-color: #270404;
+  color: white; }
 
 .article__titulo {
   line-height: 2em;
