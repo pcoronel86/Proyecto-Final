@@ -17,11 +17,8 @@ $fondo:#9fe1f5;
 }
 .h3{
     color: $colortitulos;
+    text-decoration: underline;
 }
-.Btratamiento{
-    background-color: #faf3f3;
-}
-
 .sectionTratamientos{
     
     display: flex;
@@ -46,7 +43,6 @@ $fondo:#9fe1f5;
     border: 2px inset black;
        
 }
-
 .article:hover{
     transition: 1s;
     transform: scale(1.1);
@@ -54,8 +50,6 @@ $fondo:#9fe1f5;
     @include condicion($test);
     
 }
-
-
 .article__titulo{
     line-height: 2em;
     font-weight:bold;

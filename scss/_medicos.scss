@@ -20,14 +20,27 @@
     align-content: center;
     */
 }
+
 .medicos{
     color: #008080;
     height: 400px;
     background-color: #9fe1f5;
-    opacity: 0.5;
+    opacity: 0.7;
     border: #ccc solid 1px;
     
 }
+
+.medicos__Nombre{
+    margin-bottom: 0rem;
+}
+.medicos__profecion{
+    margin-bottom: 0rem;
+    padding: 0px 0px 0px 10px;
+}
+.medicos__matricula{
+    padding: 0px 0px 0px 10px;
+}
+
 .medicos:hover{
     opacity: 1;
     transform: scale(1.02);
