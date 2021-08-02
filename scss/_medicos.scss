@@ -10,15 +10,6 @@
     justify-content: center;
     padding: 10px;
     
-   /* display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: auto;
-    width: 80%;
-    padding: 15px;
-    flex-wrap: wrap;
-    align-content: center;
-    */
 }
 
 .medicos{
@@ -35,10 +26,7 @@
 }
 .medicos__profecion{
     margin-bottom: 0rem;
-    padding: 0px 0px 0px 10px;
-}
-.medicos__matricula{
-    padding: 0px 0px 0px 10px;
+    
 }
 
 .medicos:hover{

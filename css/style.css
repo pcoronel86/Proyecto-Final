@@ -7,16 +7,7 @@
   justify-items: center;
   align-items: center;
   justify-content: center;
-  padding: 10px;
-  /* display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: auto;
-    width: 80%;
-    padding: 15px;
-    flex-wrap: wrap;
-    align-content: center;
-    */ }
+  padding: 10px; }
 
 .medicos {
   color: #008080;
@@ -29,11 +20,7 @@
   margin-bottom: 0rem; }
 
 .medicos__profecion {
-  margin-bottom: 0rem;
-  padding: 0px 0px 0px 10px; }
-
-.medicos__matricula {
-  padding: 0px 0px 0px 10px; }
+  margin-bottom: 0rem; }
 
 .medicos:hover {
   opacity: 1;
@@ -95,6 +82,10 @@
   font-weight: bold;
   color: #008080; }
 
+@media only screen and (max-width: 414px) {
+  .article {
+    width: 100%; } }
+
 .equipamiento {
   display: flex;
   flex-direction: column;
@@ -128,9 +119,16 @@
   padding-bottom: 10px;
   width: auto; }
 
+.equipo__titulo {
+  color: #008080;
+  margin-left: 0; }
+
 @media screen and (max-width: 768px) {
   .equipo {
     flex-wrap: wrap; } }
+
+.h2Contacto {
+  color: white; }
 
 input[type=text], [type=tel], [type=email] {
   width: 100%;
@@ -187,6 +185,7 @@ textarea {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto;
+  grid-column-gap: 5%;
   padding: 10px; }
   .footer .footer__direccion {
     justify-self: start;
@@ -199,15 +198,17 @@ textarea {
     justify-self: end;
     align-self: end; }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 414px) {
   .footer {
     grid-template-columns: auto;
     grid-template-rows: auto auto auto; }
     .footer .footer__logo {
       max-width: 100%;
-      justify-self: start; }
+      justify-self: start;
+      margin-top: 5%; }
     .footer .footer__redes {
-      justify-self: start; } }
+      justify-self: start;
+      margin-top: 5%; } }
 
 .footer__iredes {
   width: 30px;
@@ -261,6 +262,7 @@ h5 {
   display: block;
   border-bottom: 2px solid #0081b8; }
   .menu ul {
+    padding-left: 0rem;
     list-style: none;
     display: block;
     margin-bottom: 0rem; }

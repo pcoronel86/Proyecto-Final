@@ -1,5 +1,5 @@
 $colortitulos:#008080;
-$test: #270404;
+$hover: #270404;
 $fondo:#9fe1f5;
 @mixin condicion($color){
     background-color:($color);
@@ -7,7 +7,7 @@ $fondo:#9fe1f5;
     @if $color == $fondo{
         color:#000000
     }
-         @else if $color == $test{
+         @else if $color == $hover{
                 color:white
     }
             @else{
@@ -47,11 +47,17 @@ $fondo:#9fe1f5;
     transition: 1s;
     transform: scale(1.1);
     box-shadow: 10px 5px 5px black;
-    @include condicion($test);
+    @include condicion($hover);
     
 }
 .article__titulo{
     line-height: 2em;
     font-weight:bold;
     color: $colortitulos;
+}
+@media only screen and (max-width:414px){
+    .article{
+        width: 100%;
+    }
+    
 }

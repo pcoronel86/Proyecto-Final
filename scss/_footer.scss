@@ -6,6 +6,7 @@
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto;
+    grid-column-gap:5%;
     padding: 10px;
     .footer__direccion{
         justify-self: start;
@@ -22,16 +23,18 @@
         align-self: end;
     }
 }
-@media only screen and (max-width:400px){
+@media only screen and (max-width:414px){
     .footer{
         grid-template-columns: auto;
         grid-template-rows: auto auto auto;
         .footer__logo{
             max-width: 100%;
             justify-self: start;
+            margin-top: 5%;
         }
         .footer__redes{
             justify-self: start;
+            margin-top: 5%;
         }
     } 
 }
